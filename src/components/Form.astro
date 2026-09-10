@@ -1,0 +1,135 @@
+
+<section id="formulario" class="contact-section">
+  <div class="container form-wrapper">
+    <div class="form-header">
+      <h2>Solicita tu consulta de ahorro gratuita</h2>
+      <p>Déjanos tus datos y un asesor energético especializado analizará tu factura sin ningún tipo de compromiso.</p>
+    </div>
+
+<div class="container form-wrapper" data-aos="zoom-in" data-aos-duration="600">
+
+    <form class="lead-form" onsubmit="event.preventDefault(); alert('¡Gracias por tu solicitud! En breve nos pondremos en contacto.');">
+      <div class="form-group">
+        <label for="name">Nombre completo *</label>
+        <input type="text" id="name" required placeholder="Ej. Maria García" />
+      </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="phone">Teléfono *</label>
+          <input type="tel" id="phone" required placeholder="600 000 000" />
+        </div>
+        <div class="form-group">
+          <label for="email">Correo electrónico *</label>
+          <input type="email" id="email" required placeholder="maria@ejemplo.es" />
+        </div>
+      </div>
+
+      <div class="form-group">
+        <label for="client-type">Tipo de cliente *</label>
+        <select id="client-type" required>
+          <option value="" disabled selected>Selecciona una opción</option>
+          <option value="particular">Hogar / Particular</option>
+          <option value="pyme">Pyme / Negocio</option>
+          <option value="comunidad">Comunidad de propietarios</option>
+        </select>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Mensaje o consulta (opcional)</label>
+        <textarea id="message" rows="3" placeholder="Coméntanos si deseas revisar Luz, Gas o ambos..."></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Enviar y solicitar estudio</button>
+      
+      <p class="privacy-note">
+        🔒 Tus datos están seguros. Cumplimos rigurosamente con el RGPD.
+      </p>
+    </form>
+  </div>
+  </div>
+</section>
+
+<style>
+  .contact-section {
+    background-color: var(--bg-light);
+  }
+
+  .form-wrapper {
+    max-width: 650px;
+    background-color: #ffffff;
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    border: 1px solid var(--border-color);
+  }
+
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .form-header h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .lead-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+  }
+
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.25rem;
+  }
+
+  @media (min-width: 600px) {
+    .form-row {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    text-align: left;
+  }
+
+  label {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--text-main);
+  }
+
+  input, select, textarea {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+
+  input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 3px rgba(0, 82, 204, 0.15);
+  }
+
+  .btn-block {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .privacy-note {
+    font-size: 0.8rem;
+    text-align: center;
+    color: var(--text-muted);
+    margin-top: 0.5rem;
+  }
+</style>

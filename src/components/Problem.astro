@@ -1,0 +1,64 @@
+
+<section class="problem">
+  <div class="container">
+    <h2 class="section-title">¿Pagas demasiado en tu factura de luz o gas?</h2>
+    <p class="section-subtitle">
+      El mercado energético en España cambia continuamente. Las tarifas complejas, los peajes de acceso mal ajustados y los costes ocultos hacen que más del 80% de los usuarios estén pagando por encima de lo necesario.
+    </p>
+
+    <div class="problem-grid">
+     <div class="problem-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="icon">📈</div>
+        <h3>Subidas imprevistas</h3>
+        <p>Cambios de precio al renovar contrato sin previo aviso transparente por parte de la comercializadora.</p>
+      </div>
+
+      <div class="problem-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="icon">⚠️</div>
+        <h3>Potencia mal optimizada</h3>
+        <p>Pagar por más potencia de la que realmente consumes cada mes representa hasta un 30% del sobrecoste.</p>
+      </div>
+
+      <div class="problem-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="icon">📑</div>
+        <h3>Facturas incomprensibles</h3>
+        <p>Conceptos confusos y servicios adicionales de mantenimiento que nunca solicitaste.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .problem {
+    background-color: var(--bg-light);
+  }
+
+  .problem-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  @media (min-width: 768px) {
+    .problem-grid {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+
+  .problem-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+  }
+
+  .icon {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+  }
+</style>

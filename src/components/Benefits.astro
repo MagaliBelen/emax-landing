@@ -1,0 +1,82 @@
+---
+const benefits = [
+  {
+    icon: "💶",
+    title: "Ahorro directo en factura",
+    desc: "Optimizamos el precio por kWh y la potencia contratada para minimizar tus gastos."
+  },
+  {
+    icon: "🔍",
+    title: "Transparencia garantizada",
+    desc: "Explicaciones claras y sencillas sin letra pequeña ni sorpresas contractuales."
+  },
+  {
+    icon: "⚡",
+    title: "Sin interrupción del servicio",
+    desc: "Cualquier ajuste o cambio de comercializadora se realiza sin cortes de luz ni gas."
+  },
+  {
+    icon: "🛡️",
+    title: "Seguimiento continuo",
+    desc: "Monitoreamos el mercado para avisarte si surgen tarifas aún más ventajosas."
+  }
+];
+---
+
+<section id="beneficios" class="benefits">
+  <div class="container">
+    <h2 class="section-title">Beneficios de trabajar con Grupo EMAX</h2>
+    <p class="section-subtitle">Aseguramos una gestión eficiente, clara y sin complicaciones para tu tranquilidad.</p>
+
+   <div class="benefits-grid">
+      {benefits.map((item, index) => (
+        <article class="benefit-card" data-aos="fade-up" data-aos-delay={100 * (index + 1)}>
+          <div class="icon">{item.icon}</div>
+          <h3>{item.title}</h3>
+          <p>{item.desc}</p>
+        </article>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .benefits {
+    background-color: var(--bg-light);
+  }
+
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  @media (min-width: 640px) {
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .benefits-grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  .benefit-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+  }
+
+  .icon {
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+  }
+</style>

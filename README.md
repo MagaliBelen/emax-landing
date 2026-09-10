@@ -1,46 +1,64 @@
-# Astro Starter Kit: Basics
+# Landing Page Asesoramiento Energético - Grupo EMAX
 
-```sh
-npm create astro@latest -- --template basics
-```
+Proyecto desarrollado como prueba técnica para la posición de **Diseñadora Web / Frontend** en **Grupo EMAX**. 
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+El objetivo principal es captar clientes del mercado español interesados en optimizar y reducir sus facturas de luz y gas mediante un estudio gratuito.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## Enlaces de Interés
+- **Demo en vivo:** [https://emax-landing.vercel.app](https://emax-landing.vercel.app)
+- **Repositorio:** [https://github.com/MagaliBelen/emax-landing](https://github.com/MagaliBelen/emax-landing)
+
+---
+
+## Tecnologías Utilizadas
+
+- **Framework:** [Astro](https://astro.build) (Elegido por su alto rendimiento, carga ultra rápida y arquitectura *Zero JS by default*).
+- **Lenguajes:** HTML5 Semántico, CSS3 moderno (Variables CSS, Flexbox, Grid, Keyframe Animations).
+- **Librerías / Scripts:** [AOS - Animate On Scroll](https://michalsnik.github.io/aos/) para revelado progresivo de elementos.
+- **Despliegue:** Vercel.
+
+---
+
+## Organización del Proyecto
 
 ```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+src/
+├── components/       # Componentes independientes y reutilizables
+│   ├── Benefits.astro
+│   ├── Footer.astro
+│   ├── Form.astro
+│   ├── Hero.astro
+│   ├── Problem.astro
+│   ├── ScrollToTop.astro
+│   ├── Solution.astro
+│   └── Steps.astro
+├── layouts/          # Layout principal de la aplicación
+│   └── Layout.astro
+├── pages/            # Rutas de la página
+│   └── index.astro
+└── styles/           # Estilos globales y reset
+    └── global.css
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## Decisiones de Diseño
+- **Simulador de Ahorro Visual:** Gráficos para una comparación directa de consumo mensual (145 € vs. 87 €) y el impacto del ahorro anual estimado (696 €/año).
+- **Jerarquía Visual y Accesibilidad:** Uso de tipografía legible, contrastes accesibles y llamadas a la acción (CTA) con sombras y animaciones de pulso para guiar la atención del usuario.
+- **Navegación Fluida:** Header Sticky con desenfoque de fondo (backdrop-filter), enlaces directos a las secciones y botón flotante Back-to-Top para mejorar la usabilidad en dispositivos móviles.
+- **Formulario Sin Fricción:** Campos estructurados para captar leads cualificados (tipo de cliente, teléfono, email) con validaciones nativas.
+- **Paleta Cromática Estratégica:** Uso de azul corporativo para aportar seguridad y profesionalidad, combinado con tonos verdes en precios e indicadores de ahorro para evocar sostenibilidad y eficiencia financiera.
 
-All commands are run from the root of the project, from a terminal:
+---
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Uso de Inteligencia Artificial como Apoyo
+De acuerdo con las pautas de la prueba, se empleó IA como herramienta de apoyo para:
+- **Copywriting:** Optimización de textos orientados a la propuesta de valor y los dolores específicos del consumidor energético español.
+- **Estructuración:** Maquetación inicial de la plantilla para acelerar el desarrollo.
+- **Refactorización:** Revisión de accesibilidad y optimización de animaciones CSS.
 
-## 👀 Want to learn more?
+---
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Autora
+Desarrollado por Magalí Borrello

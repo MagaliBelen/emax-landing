@@ -1,0 +1,101 @@
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div class="footer-brand">
+      <div class="logo">Grupo <span>EMAX</span></div>
+      <p>Asesoramiento y soluciones de ahorro energético adaptadas al mercado español.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Navegación</h4>
+      <a href="#">Inicio</a>
+      <a href="#beneficios">Beneficios</a>
+      <a href="#como-funciona">Cómo funciona</a>
+    </div>
+
+    <div class="footer-col">
+      <h4>Legal (Simulado)</h4>
+      <a href="#">Aviso Legal</a>
+      <a href="#">Política de Privacidad</a>
+      <a href="#">Política de Cookies</a>
+    </div>
+  </div>
+
+  <div class="footer-bottom container">
+    <p>© {new Date().getFullYear()} Grupo EMAX. Todos los derechos reservados.</p>
+    <p class="attribution">
+      Diseñado y desarrollado por Magalí Borrello
+    </p>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: var(--bg-dark);
+    color: #ffffff;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    padding-bottom: 3rem;
+    border-bottom: 1px solid #1e293b;
+  }
+
+  @media (min-width: 768px) {
+    .footer-grid {
+      grid-template-columns: 2fr 1fr 1fr;
+    }
+  }
+
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: white;
+    margin-bottom: 0.75rem;
+  }
+
+  .logo span {
+    color: var(--primary);
+  }
+
+  .footer-brand p {
+    color: #94a3b8;
+    max-width: 350px;
+  }
+
+  .footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .footer-col h4 {
+    color: white;
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-col a {
+    color: #94a3b8;
+    text-decoration: none;
+    transition: color 0.2s;
+  }
+
+  .footer-col a:hover {
+    color: white;
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding-top: 2rem;
+  }
+
+  .footer-bottom p {
+    color: #64748b;
+    font-size: 0.875rem;
+  }
+</style>
