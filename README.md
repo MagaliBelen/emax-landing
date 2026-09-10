@@ -23,6 +23,7 @@ El objetivo principal es captar clientes del mercado español interesados en opt
 
 ## Organización del Proyecto
 
+```text
 src/
 ├── components/       # Componentes independientes y reutilizables
 │   ├── Benefits.astro
@@ -39,6 +40,7 @@ src/
 │   └── index.astro
 └── styles/           # Estilos globales y reset
     └── global.css
+```
 
 ---
 
